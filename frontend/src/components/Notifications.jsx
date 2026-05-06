@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png'
+
 export default function Notifications() {
   return (
     <section style={{ backgroundColor: '#0D0B21', padding: '100px 40px', position: 'relative', overflow: 'hidden' }}>
@@ -32,6 +34,9 @@ export default function Notifications() {
           {/* Task card */}
           <div style={{ backgroundColor: '#fff', borderRadius: '16px', padding: '24px', position: 'absolute', top: '60px', right: '20px', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', zIndex: 1, width: '340px' }}>
             <h4 style={{ color: '#0D0B21', fontSize: '18px', fontWeight: 700, marginBottom: '16px' }}>Finance mobile app</h4>
+            <div style={{ backgroundColor: '#F7F5F0', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', height: '160px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src={heroImage} alt="Finance app" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '20px' }} />
+            </div>
             <div className="flex items-center" style={{ gap: '6px', marginBottom: '6px' }}>
               <span style={{ fontSize: '13px', color: '#636071' }}>☰ Progress</span>
               <span style={{ marginLeft: 'auto', fontSize: '13px', color: '#636071' }}>8/10</span>

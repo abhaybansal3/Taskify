@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png'
+
 const ProgressBar = ({ label, value, max, color }) => (
   <div style={{ marginBottom: '24px' }}>
     <div className="flex justify-between items-center" style={{ marginBottom: '8px' }}>
@@ -27,7 +29,7 @@ export default function StatsCards() {
         {/* Finance Mobile App Card */}
         <div style={{ backgroundColor: '#F7F5F0', borderRadius: '16px', padding: '32px' }}>
           <div style={{ backgroundColor: '#E8D5A0', borderRadius: '12px', overflow: 'hidden', marginBottom: '20px', height: '220px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop" alt="Finance app" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={heroImage} alt="Finance app" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '24px' }} />
           </div>
           <h3 style={{ color: '#0D0B21', fontSize: '20px', fontWeight: 700, marginBottom: '12px' }}>Finance mobile app</h3>
           <div className="flex justify-between items-center" style={{ marginBottom: '8px' }}>
