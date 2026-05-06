@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://taskify-production-d4ca.up.railway.app' });
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://taskify-production-d4ca.up.railway.app/api',
+});
 
 // Add token to requests
 API.interceptors.request.use((req) => {
